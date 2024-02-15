@@ -7,7 +7,9 @@ The idea is simply to see if there are any 4XX or 5XX errors.
 
 First install a virtual environment:
 
-```python -m venv "name of environment"```
+```python -m venv venv```
+
+This will create a virtual environment named "venv". 
 
 Then, use your terminal to activate it.
 

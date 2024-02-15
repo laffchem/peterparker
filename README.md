@@ -5,18 +5,28 @@ The idea is simply to see if there are any 4XX or 5XX errors.
 
 ### Setup
 
-First install a virtual environment. -- python -m venv "name of environment"
+First install a virtual environment:
 
-Then, use your terminal to activate it. ~ source venv/bin/activate
+```python -m venv "name of environment"```
 
-Once your virtual environment is activated, run pip install -r requirements.txt
+Then, use your terminal to activate it.
+
+```source venv/bin/activate```
+
+Once your virtual environment is activated, ensure your requirements.txt is in the directory you are in.
+
+```pip install -r requirements.txt```
 
 ### Commands
-If you simply need a lot, all you have to type is scrapy crawl spiderman. This will save a log. Which has the timestamp TheDailyBugle-YYYYMMDD.HHMM.log.
+If you simply need a lot, enter the command:
 
-That can be changed in the settings.py file.
+```scrapy crawl spiderman```. 
 
-If you want the output the results to JSON simply type scrapy crawl spiderman -o filename.json.
+This will save a log. Which has the timestamp TheDailyBugle-YYYYMMDD.HHMM.log. That can be changed in the settings.py file.
+
+If you want the output the results to JSON simply type: 
+
+```scrapy crawl spiderman -o filename.json```
 
 ### Ideas
 Will add in a way to check nginx version in each request and log it for 4XX / 5XX errors.
